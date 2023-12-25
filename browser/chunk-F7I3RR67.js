@@ -1,1 +1,0 @@
-import{Ba as r,Qb as n,xa as i}from"./chunk-JRKSVHZQ.js";var p=(()=>{let t=class t{constructor(){this.viewContainerRef=i(n)}};t.\u0275fac=function(o){return new(o||t)},t.\u0275dir=r({type:t,selectors:[["","appAd",""]],standalone:!0});let e=t;return e})();export{p as a};

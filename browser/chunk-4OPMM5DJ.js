@@ -1,1 +1,0 @@
-import{b as a,c as i,e as t,h as n}from"./chunk-QE5WEOA4.js";var e=a("fadeRouteAnimation",[n("*<=>*",[t({opacity:0,"will-change":"transform"}),i("0.3s ease-in",t({opacity:1,"will-change":"transform"}))])]);export{e as a};

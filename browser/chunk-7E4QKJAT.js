@@ -1,1 +1,0 @@
-import"./chunk-RVFOIZLJ.js";var e=[{path:"",redirectTo:"role-manage",pathMatch:"full"},{path:"success",title:"\u6210\u529F\u9875",data:{key:"success"},loadComponent:()=>import("./chunk-D3L2FWKS.js").then(t=>t.SuccessComponent)},{path:"fail",title:"\u5931\u8D25\u9875",data:{key:"fail"},loadComponent:()=>import("./chunk-5LBGLT2B.js").then(t=>t.FailComponent)}];export{e as default};
