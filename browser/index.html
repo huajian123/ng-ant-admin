@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" data-critters-container>
+  <head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8">
+    <title>NgAntAdmin</title>
+    <base href="/ng-ant-admin/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" href="favicon.ico" rel="icon">
+    <style type="text/css">
+      .global-loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        will-change: transform;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .global-loader-fade-in {
+        will-change: transform;
+        opacity: 0;
+      }
+
+      .global-loader-hidden {
+        display: none;
+      }
+
+      .global-loader h1 {
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        letter-spacing: 0.04rem;
+        white-space: pre;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: repeating-linear-gradient(to right, #f44336, #9c27b0, #3f51b5, #03a9f4, #009688, #8bc34a, #ffeb3b, #ff9800);
+        background-size: 750% auto;
+        background-position: 0 100%;
+        animation: gradient 20s infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+
+      .night-bg {
+        background-color: #141414;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0 0;
+        }
+
+        100% {
+          background-position: -750% 0;
+        }
+      }
+    </style>
+    <!--
+    参考https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/
+    没用到谷歌字体可以删除
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  -->
+    <!--
+    谷歌字体
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  -->
+    <!--谷歌materialIcon ，如果你没用material icons可以删除-->
+    <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+  <link rel="stylesheet" href="styles-D5R4YKNL.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-D5R4YKNL.css"></noscript><link rel="modulepreload" href="chunk-SD3T2SVA.js"><link rel="modulepreload" href="chunk-KJQNQO5I.js"><link rel="modulepreload" href="chunk-DVZPZ6OP.js"><link rel="modulepreload" href="chunk-DNZSWFGK.js"><link rel="modulepreload" href="chunk-WA6OWWT7.js"><link rel="modulepreload" href="chunk-4OPMM5DJ.js"><link rel="modulepreload" href="chunk-EQEHLEG6.js"><link rel="modulepreload" href="chunk-WQ2PFQU4.js"><link rel="modulepreload" href="chunk-UZPSFPLC.js"><link rel="modulepreload" href="chunk-A5TWIV6J.js"><link rel="modulepreload" href="chunk-XKWMGQSX.js"><link rel="modulepreload" href="chunk-3D3NKZKE.js"><link rel="modulepreload" href="chunk-I63VFDWA.js"><link rel="modulepreload" href="chunk-U74GRTJJ.js"><link rel="modulepreload" href="chunk-GJRZ36V4.js"><link rel="modulepreload" href="chunk-KSI5QFZJ.js"><link rel="modulepreload" href="chunk-6JIB6OFS.js"><link rel="modulepreload" href="chunk-KJHBGE4L.js"><link rel="modulepreload" href="chunk-N3XLGFTX.js"><link rel="modulepreload" href="chunk-CE7RPCGD.js"><link rel="modulepreload" href="chunk-F3G676FT.js"><link rel="modulepreload" href="chunk-DNN5CCO3.js"><link rel="modulepreload" href="chunk-3VX5FYGM.js"><link rel="modulepreload" href="chunk-AKSBDCXH.js"><link rel="modulepreload" href="chunk-3AQ33U3D.js"><link rel="modulepreload" href="chunk-N3FMEEFQ.js"><link rel="modulepreload" href="chunk-BM3EOPSM.js"><link rel="modulepreload" href="chunk-P5KDMOOE.js"><link rel="modulepreload" href="chunk-Q3A6DG36.js"><link rel="modulepreload" href="chunk-4MQIIXZW.js"><link rel="modulepreload" href="chunk-DORWZLVD.js"><link rel="modulepreload" href="chunk-U347W5DT.js"><link rel="modulepreload" href="chunk-52GPYZZD.js"><link rel="modulepreload" href="chunk-Z7LOURQE.js"><link rel="modulepreload" href="chunk-GIJKIO47.js"><link rel="modulepreload" href="chunk-EANCFO6O.js"><link rel="modulepreload" href="chunk-54IXXBUA.js"><link rel="modulepreload" href="chunk-V5KBTO4V.js"><link rel="modulepreload" href="chunk-O7FKYIWI.js"><link rel="modulepreload" href="chunk-UWNEGUIE.js"><link rel="modulepreload" href="chunk-5ZCEWICW.js"><link rel="modulepreload" href="chunk-QE5WEOA4.js"><link rel="modulepreload" href="chunk-SRDG2XG7.js"><link rel="modulepreload" href="chunk-CIKGXJBT.js"><link rel="modulepreload" href="chunk-AGTXBK3J.js"><link rel="modulepreload" href="chunk-72KHUKD2.js"><link rel="modulepreload" href="chunk-JRKSVHZQ.js"><link rel="modulepreload" href="chunk-RVFOIZLJ.js"></head>
+  <body>
+    <app-root></app-root>
+    <div id="globalLoader" class="global-loader">
+      <h1>loading...</h1>
+    </div>
+  <script src="polyfills-LZBJRJJE.js" type="module"></script><script src="scripts-DHZEZMTP.js" defer></script><script src="main-OA7UTP4G.js" type="module"></script></body>
+  <script>
+    const isNight = window.localStorage.getItem('IsNightKey');
+    if (isNight === 'true') {
+      document.getElementById('globalLoader').className += ' night-bg';
+    }
+  </script>
+</html>
